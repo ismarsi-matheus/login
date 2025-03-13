@@ -31,6 +31,8 @@
         <input type="password" class="form-control" name="password">  
  
         <input class="btn btn-success mt-3" type="submit">
+        <a href="cadastro.php" class="btn btn-primary mt-3">Cadastra-se</a>
+        <a href="esqueci_senha.php" class="btn btn-primary mt-3">Esqueci a Senha</a>
     </form>
    
 </body>

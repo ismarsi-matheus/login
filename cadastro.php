@@ -62,10 +62,7 @@
                     <input type="number" class="form-control" name="telefone2">
                 </div>
 
-                <div class="col">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" name="email">
-                </div>
+                
 
             </div>
 
@@ -82,6 +79,10 @@
                 <div class="col">
                     <label for="bairro">Bairro:</label>
                     <input type="text" class="form-control" name="bairro">
+                </div>
+                <div class="col">
+                    <label for="cpf">CPF:</label>
+                    <input type="number" class="form-control" name="cpf">
                 </div>
             </div>
 
@@ -102,7 +103,9 @@
             </div>
 
             <label for="senha">Senha</label>
-            <input type="senha" class="form-control">
+            <input type="password" class="form-control" name="senha">
+
+
 
             <input type="submit" class="btn btn-success">
         </form>
