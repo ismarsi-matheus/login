@@ -23,7 +23,7 @@ $consulta_usuario_senha='SELECT * FROM tb_usuario where usuario ="'.$user_form .
 $resultado =$banco ->query($consulta_usuario_senha)->fetch();
 
 if (!empty($resultado)&& $resultado != false){
-    header('location:login_sucesso.php');
+    header('location:tela_usuario.php');
 } else{
     header('location:index.php');
 }

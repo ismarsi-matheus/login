@@ -39,7 +39,7 @@
             <label for="senha">ALTERAR SENHA:</label>
             <input type="password" class="form-control" name="senha" required>
 
-            <input type="submit" class="btn btn-success">
+            <input type="submit" class="btn btn-success mt-3">
         </form>
 
 
