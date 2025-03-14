@@ -31,9 +31,9 @@ $n_casa=$_POST['numero_casa'];
 $bairro=$_POST['bairro'];
 $cidade=$_POST['cidade'];
 
-$inserte = 'INSERT INTO tb_pessoa (nome,ano_nascimento,cpf,telefone_1,telefone_2,logradouro,n_casa,bairro,cidade) VALUE (:nome,:ano_nascimento,:cpf,:telefone_1,:telefone_2,:logradouro,:n_casa,:bairro,:cidade)';
+$insert = 'INSERT INTO tb_pessoa (nome,ano_nascimento,cpf,telefone_1,telefone_2,logradouro,n_casa,bairro,cidade) VALUE (:nome,:ano_nascimento,:cpf,:telefone_1,:telefone_2,:logradouro,:n_casa,:bairro,:cidade)';
 
-$boxe = $banco->prepare($inserte);
+$boxe = $banco->prepare($insert);
 
 $boxe->execute([
    ':nome'=>$nome,
