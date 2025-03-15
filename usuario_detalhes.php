@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Editar Pessoa</title>
+    <title>Mostrar Informações</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     </style>
 
     <main class="container text-center my-5">
-        <h2>Editar Pessoa</h2>
+        <h2>Mostrar Informações</h2>
         <br>
 
         <?php
@@ -45,7 +45,7 @@
         $dados = $banco->query($select)->fetch();
         ?>
 
-        <form action="./pessoa_editar.php" method="POST">
+        <form>
             <input type="hidden" name="id" value="<?= $dados['id'] ?>">
 
             <!-- Campos da tabela tb_pessoa -->
@@ -55,33 +55,33 @@
             <div class="row mt-2">
                 <div class="col">
                     <label for="telefone_1">Telefone 1:</label>
-                    <input type="text" class="form-control" name="telefone_1" value="<?= $dados['telefone_1'] ?>">
+                    <input type="text" class="form-control" name="telefone_1" value="<?= $dados['telefone_1'] ?>" disabled>
                 </div>
                 <div class="col">
                     <label for="telefone_2">Telefone 2:</label>
-                    <input type="text" class="form-control" name="telefone_2" value="<?= $dados['telefone_2'] ?>">
+                    <input type="text" class="form-control" name="telefone_2" value="<?= $dados['telefone_2'] ?>" disabled>
                 </div>
             </div>
 
             <div class="row mt-2">
                 <div class="col">
                     <label for="logradouro">Logradouro:</label>
-                    <input type="text" class="form-control" name="logradouro" value="<?= $dados['logradouro'] ?>">
+                    <input type="text" class="form-control" name="logradouro" value="<?= $dados['logradouro'] ?>" disabled>
                 </div>
                 <div class="col">
                     <label for="n_casa">Número:</label>
-                    <input type="number" class="form-control" name="n_casa" value="<?= $dados['n_casa'] ?>">
+                    <input type="number" class="form-control" name="n_casa" value="<?= $dados['n_casa'] ?>" disabled>
                 </div>
             </div>
 
             <div class="row mt-2">
                 <div class="col">
                     <label for="bairro">Bairro:</label>
-                    <input type="text" class="form-control" name="bairro" value="<?= $dados['bairro'] ?>">
+                    <input type="text" class="form-control" name="bairro" value="<?= $dados['bairro'] ?>" disabled>
                 </div>
                 <div class="col">
                     <label for="cidade">Cidade:</label>
-                    <input type="text" class="form-control" name="cidade" value="<?= $dados['cidade'] ?>">
+                    <input type="text" class="form-control" name="cidade" value="<?= $dados['cidade'] ?>" disabled>
                 </div>
             </div>
 
@@ -104,11 +104,12 @@
                 </div>
                 <div class="col">
                     <label for="senha">Senha:</label>
-                    <input type="text" class="form-control" name="senha" value="<?= $dados['senha'] ?>">
+                    <input type="text" class="form-control" name="senha" value="<?= $dados['senha'] ?>" disabled>
                 </div>
             </div>
 
-            <input type="submit" class="btn btn-success mt-3" value="Salvar Alterações">
+            <!-- Botão "Voltar" -->
+            <a href="tela_usuario.php" class="btn btn-primary mt-3">Voltar</a>
         </form>
     </main>
 </body>
