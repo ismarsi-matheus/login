@@ -47,7 +47,8 @@
 
 
             <label for="nome">Nome:</label class="form-control">
-            <input type="text" class="form-control" name="nome">
+            <input type="text" class="form-control" name="nome" required  oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')">
+
             <label for="usuario">Usuário:</label>
             <input type="text" class="form-control" name="usuario">
             <div class="row mt-2 ">
@@ -107,7 +108,7 @@
 
 
 
-            <input type="submit" class="btn btn-success">
+            <input type="submit" class="btn btn-success" value="Cadastrar">
         </form>
 
 

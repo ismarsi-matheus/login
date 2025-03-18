@@ -25,12 +25,12 @@
  
         <h1>Login</h1>
         <label class="form-label">Usuário: </label>
-        <input type="text" class="form-control" name="user">
+        <input type="text" class="form-control" name="user" required onkeypress="return ApenasLetras(event)" oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')">
  
         <label class="form-label">Senha: </label>
-        <input type="password" class="form-control" name="password">  
+        <input type="password" class="form-control" name="password" required>  
  
-        <input class="btn btn-success mt-3" type="submit">
+        <input class="btn btn-success mt-3" type="submit" value="Entrar">
         <a href="cadastro.php" class="btn btn-primary mt-3">Cadastra-se</a>
         <a href="esqueci_senha.php" class="btn btn-primary mt-3">Esqueci a Senha</a>
     </form>

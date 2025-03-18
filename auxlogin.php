@@ -25,5 +25,8 @@ $resultado =$banco ->query($consulta_usuario_senha)->fetch();
 if (!empty($resultado)&& $resultado != false){
     header('location:tela_usuario.php');
 } else{
-    header('location:index.php');
+    echo'<script>
+    alert("Senha ou usuario invalido")
+    window.location.replace("index.php");
+    </script>';
 }
