@@ -8,6 +8,28 @@
 
     <title>Formulário</title>
 </head>
+<script>
+function mascaraTelefone(input) {
+    let numero = input.value.replace(/\D/g, ""); // Remove tudo que não for número
+
+    if (numero.length > 11) {
+        numero = numero.slice(0, 11); // Limita ao máximo de 11 dígitos
+    }
+
+    if (numero.length > 10) {
+        input.value = `(${numero.slice(0, 2)}) ${numero.slice(2, 7)}-${numero.slice(7)}`;
+    } else if (numero.length > 6) {
+        input.value = `(${numero.slice(0, 2)}) ${numero.slice(2, 6)}-${numero.slice(6)}`;
+    } else if (numero.length > 2) {
+        input.value = `(${numero.slice(0, 2)}) ${numero.slice(2)}`;
+    } else {
+        input.value = numero;
+    }
+}
+
+
+
+</script>
 
 <body>
 
@@ -47,7 +69,7 @@
 
 
             <label for="nome">Nome:</label class="form-control">
-            <input type="text" class="form-control" name="nome" required  oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')">
+            <input type="text" class="form-control" name="nome" required oninput="this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s]/g, '')">
 
             <label for="usuario">Usuário:</label>
             <input type="text" class="form-control" name="usuario">
@@ -55,7 +77,9 @@
 
                 <div class="col">
                     <label for="telefone">Telefone:</label>
-                    <input type="number" class="form-control" name="telefone1">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" class="form-control" name="telefone1" id="telefone1" oninput="mascaraTelefone(this)">
+
                 </div>
 
                 <div class="col">
@@ -63,7 +87,7 @@
                     <input type="number" class="form-control" name="telefone2">
                 </div>
 
-                
+
 
             </div>
 
