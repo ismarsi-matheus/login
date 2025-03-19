@@ -15,6 +15,25 @@ $consulta_usuario_senha = 'SELECT * FROM tb_usuario WHERE usuario = "' . $user_f
 
 $resultado = $banco->query($consulta_usuario_senha)->fetch();
 
+$status = $resultado ['status'];
+
+
+?>
+
+<?php if ($status =='admin'){?>
+<h1>Bem vindo ,avengers admin</h1>
+
+<?php } ?>
+
+
+
+
+<h1>Bem vindo ,avengers comum </h1>
+
+
+
+<?php
+die;
 if (!empty($resultado) && $resultado != false) {
     header('location:tela_usuario.php');
     exit();
