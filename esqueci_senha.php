@@ -36,11 +36,18 @@
             <label for="cpf">CPF:</label>
             <input type="number" class="form-control" name="cpf" required>
 
-            <label for="senha">ALTERAR SENHA:</label>
-            <input type="password" class="form-control" name="senha" required>
+            <label for="senha">Alterar Senha:</label>
+            <input type="password" class="form-control" name="senha" id="senha" required pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,12}$">
+            <small id="erroSenhaRequisitos">A senha deve ter entre 8 e 12 caracteres, pelo menos uma letra maiúscula e um número.</small>
+
+            <label for="confirmar_senha">Confirme a Senha:</label>
+            <input type="password" class="form-control" name="confirmar_senha" id="confirmar_senha" required>
+            <small id="erroSenha">As senhas não coincidem!</small>
 
             <input type="submit" class="btn btn-success mt-3">
         </form>
+
+        <script src="./assets/esqueci_senha.js"></script>
 
 
 </body>

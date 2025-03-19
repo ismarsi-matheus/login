@@ -1,5 +1,4 @@
 <?php
-var_dump($_POST);
 
 $usuario_form = $_POST['usuario'];
 $senha_form = $_POST['senha'];
@@ -46,3 +45,8 @@ $boxe->execute([
    ':bairro'=>$bairro,
    ':cidade'=>$cidade,
 ]);
+
+echo'<script>
+    alert("Usuário Cadastrado com Sucesso!!")
+    window.location.replace("index.php");
+    </script>';
