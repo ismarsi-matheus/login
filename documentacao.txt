@@ -1,6 +1,0 @@
-tela de login:tem dois campos de validaçao um pra colocar o usuario e, outro para validar a senha daquele usuario embaixo dos campos tem 3 botoes um para entar ,um que leva para a area de cadstro e outro que leva para area de redefiniçao de senha 
-tela de cadastro: na tela de cadastro ,11 campos ,comeca com o campo de nome embaixo vem o campo de usuario ,logo abaixo tem os dois campos de telefone ,aonde pode colocar um telefone principal e um telefone auxiliar ,apos isso vem o logradauro ,depois vem o numero da casa do lado vem o bairro e do lado vem o cpf que vai ser usado pra fazer a redefiniçao de senha ,aonde o cpf define o usuario,embaixo vem o campo de cidade ,apos vem o campo pra por o ano de nascimento do usuario,logo apos vem o campo de senha e, para validar as informaçoes tem botao de cadastra-se 
-tela de redefiniçao de senha: tem dois campos de validaçao um de cpf ,pra localizar o usuario de forma unica e, o outro para colocar a nova senha ,e no final um botao de para validar as informaçoes
-tela de usuario:na tela de usuario ,tem a listagem de todos os usuarios cadastrados ,do lado vem 3 botoes um de abrir para ver os detalhes,um para editar as informaçoes e um de botao de excluir 
-tela de detalhes:aparece todos os campos cadastrados no banco 
-tela de edicao: 
