@@ -136,4 +136,4 @@ O sistema utiliza um banco de dados MySQL com duas tabelas principais:
 
 Este sistema é uma solução completa para gerenciamento de usuários, com funcionalidades de login, cadastro, recuperação de senha e edição de dados. Os scripts JavaScript garantem uma experiência de usuário mais amigável, com validações em tempo real e máscaras para campos como telefone e CPF.
 
-Para qualquer dúvida ou sugestão de melhoria, sinta-se à vontade para entrar em contato! 😊
+
